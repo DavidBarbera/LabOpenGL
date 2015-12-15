@@ -1,0 +1,16 @@
+﻿  Source.cpp
+c:\users\david\documents\labopengl\insights 002\insights 002\Angel.h(64): warning C4305: 'initializing' : truncation from 'double' to 'const GLfloat'
+c:\users\david\documents\labopengl\insights 002\insights 002\mat.h(766): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\david\documents\labopengl\insights 002\insights 002\mat.h(767): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\david\documents\labopengl\insights 002\insights 002\mat.h(768): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\david\documents\labopengl\insights 002\insights 002\mat.h(789): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\david\documents\labopengl\insights 002\insights 002\mat.h(791): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\david\documents\labopengl\insights 002\insights 002\mat.h(794): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\david\documents\labopengl\insights 002\insights 002\mat.h(811): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+Source.cpp(12): error C2078: too many initializers
+Source.cpp(12): error C2440: 'initializing' : cannot convert from 'GLuint *' to 'GLuint'
+          There is no context in which this conversion is possible
+Source.cpp(14): error C2078: too many initializers
+Source.cpp(14): error C2440: 'initializing' : cannot convert from 'GLuint *' to 'GLuint'
+          There is no context in which this conversion is possible
+Source.cpp(28): error C3861: 'gutSwapBuffers': identifier not found

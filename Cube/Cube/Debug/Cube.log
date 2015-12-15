@@ -1,0 +1,50 @@
+﻿  cube.cpp
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(10): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(10): error C2146: syntax error: missing ';' before identifier 'point4'
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(13): error C2086: 'int point4': redefinition
+  c:\users\david\documents\labopengl\cube\cube\cube.cpp(10): note: see declaration of 'point4'
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(13): error C2146: syntax error: missing ';' before identifier 'positions'
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(18): error C3861: 'quad': identifier not found
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(19): error C3861: 'quad': identifier not found
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(20): error C3861: 'quad': identifier not found
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(21): error C3861: 'quad': identifier not found
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(22): error C3861: 'quad': identifier not found
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(23): error C3861: 'quad': identifier not found
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(28): error C2065: 'vPositions': undeclared identifier
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(28): error C2065: 'positions': undeclared identifier
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(29): error C2065: 'vPositions': undeclared identifier
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(29): error C2065: 'positions': undeclared identifier
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(30): error C2065: 'vPositions': undeclared identifier
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(30): error C2065: 'positions': undeclared identifier
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(31): error C2065: 'vPositions': undeclared identifier
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(31): error C2065: 'positions': undeclared identifier
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(32): error C2065: 'vPositions': undeclared identifier
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(32): error C2065: 'positions': undeclared identifier
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(33): error C2065: 'vPositions': undeclared identifier
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(33): error C2065: 'positions': undeclared identifier
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(39): error C2065: 'positions': undeclared identifier
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(40): error C2064: term does not evaluate to a function taking 4 arguments
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(41): error C2064: term does not evaluate to a function taking 4 arguments
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(42): error C2064: term does not evaluate to a function taking 4 arguments
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(43): error C2064: term does not evaluate to a function taking 4 arguments
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(44): error C2064: term does not evaluate to a function taking 4 arguments
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(45): error C2064: term does not evaluate to a function taking 4 arguments
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(46): error C2064: term does not evaluate to a function taking 4 arguments
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(47): error C2064: term does not evaluate to a function taking 4 arguments
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(51): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'color4'
+  c:\users\david\documents\labopengl\cube\cube\cube.cpp(51): note: The initializer contains too many elements
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(52): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'color4'
+  c:\users\david\documents\labopengl\cube\cube\cube.cpp(52): note: The initializer contains too many elements
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(53): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'color4'
+  c:\users\david\documents\labopengl\cube\cube\cube.cpp(53): note: The initializer contains too many elements
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(54): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'color4'
+  c:\users\david\documents\labopengl\cube\cube\cube.cpp(54): note: The initializer contains too many elements
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(55): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'color4'
+  c:\users\david\documents\labopengl\cube\cube\cube.cpp(55): note: The initializer contains too many elements
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(56): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'color4'
+  c:\users\david\documents\labopengl\cube\cube\cube.cpp(56): note: The initializer contains too many elements
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(57): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'color4'
+  c:\users\david\documents\labopengl\cube\cube\cube.cpp(57): note: The initializer contains too many elements
+c:\users\david\documents\labopengl\cube\cube\cube.cpp(58): error C2440: '<function-style-cast>': cannot convert from 'initializer list' to 'color4'
+  c:\users\david\documents\labopengl\cube\cube\cube.cpp(58): note: The initializer contains too many elements

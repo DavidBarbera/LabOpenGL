@@ -1,0 +1,94 @@
+Creating the VBO:
+
+const int NumVertices=36;
+int Index = 0;
+
+typedef vec4 point4;
+typeded vec4 color4;
+
+point4 vPositions[NumVertices];
+color4 vColors[NumColors];
+
+point4 positions[8] = {
+    point4( -0.5, -0.5,  0.5, 1.0 ),
+    point4( -0.5,  0.5,  0.5, 1.0 ),
+    point4(  0.5,  0.5,  0.5, 1.0 ),
+    point4(  0.5, -0.5,  0.5, 1.0 ),
+    point4( -0.5, -0.5, -0.5, 1.0 ),
+    point4( -0.5,  0.5, -0.5, 1.0 ),
+    point4(  0.5,  0.5, -0.5, 1.0 ),
+    point4(  0.5, -0.5, -0.5, 1.0 ),
+};
+
+color4 colors[8] = {
+    color4( 0.0, 0.0, 0.0, 1.0 ),
+    color4( 1.0, 0.0, 0.0, 1.0 ),
+    color4( 1.0, 1.0, 0.0, 1.0 ),
+    color4( 0.0, 1.0, 0.0, 1.0 ),
+    color4( 0.0, 0.0, 1.0, 1.0 ),
+    color4( 1.0, 0.0, 1.0, 1.0 ),
+    color4( 1.0, 1.0, 1.0, 1.0 ),
+    color4( 0.0, 1.0, 1.0, 1.0 ),
+};
+
+void quad( int a, int b, int c, int d) 
+{
+    vColors[Index]=colors[a]; vPositions[Index] = positions[a]; Index++;
+    vColors[Index]=colors[b]; vPositions[Index] = positions[b]; Index++;
+    vColors[Index]=colors[c]; vPositions[Index] = positions[c]; Index++;
+    vColors[Index]=colors[a]; vPositions[Index] = positions[a]; Index++;
+    vColors[Index]=colors[c]; vPositions[Index] = positions[c]; Index++;
+    vColors[Index]=colors[d]; vPositions[Index] = positions[d]; Index++;
+}
+
+
+
+
+----------------------------------------
+Vertex Array Object (VAO)
+1. Declare
+2. Initialise
+3. make it current
+
+GLuint vao;
+glGenVertexArrays( 1 , &vao );
+glBindVertexArray( vao );
+---------------------------------------
+Vertex Buffer Object (VBO)
+1. Declare
+2. Initialise
+3. Make it current
+4. Load data into VBO
+5. bind VAO for use in rendering
+
+GLuint buffer;
+glGenBuffers( 1 , &buffer );
+glBindBuffer( GL_ARRAY_BUFFER , buffer );
+glBufferData( GL_ARRAY_BUFFER , sizeof(vPositions) + sizeof(vColors) , NULL , GL_STATIC_DRAW );
+glBufferSubData( GL_ARRAY_BUFFER , 0 , sizeof(vPositions), vPositions );
+glBufferSubData( GL_ARRAY_BUFFER , sizeof(vPositions, sizeof(vColors), vColors );
+
+-----------------------------------
+Vertex Array Code:
+
+GLuint vPosition = glAttribLocation( program , "vPosition" );
+glEnableVertexAttribArray( vPosition );
+glVertexAttribPointer( vPosition , 4 , GL_FLOAT	, GL_FALSE , 0 , BUFFER_OFFSET(0) );
+
+GLuint vColor = glAttribLocation( program , "vColors" );
+glEnableVertexAttribArray( vColor );
+glVertexAttribPointer( vColor , 4 , GL_FLOAT	, GL_FALSE , 0 , BUFFER_OFFSET(sizeof(vPositions)) );
+---------------------------------------------------------------------
+
+GLuint InitShaders( vshaderFile, fshaderFile);
+
+glUseProgram()
+------------------------------------------------------------------
+GLint loc = glGetAttribLocation( program, "name");
+GLint loc = glGetUniformLocation( program, "name");
+// the glGet*Location() functions
+
+//finding out shader variables
+glActiveAttrib()
+
+
